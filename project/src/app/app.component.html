@@ -15,8 +15,10 @@
       <input class="form-control mr-sm-2" type="text" (keyup)="onKey($event)" placeholder="Поиск" aria-label="Search">
       <a routerLink="/movie-search">
         <button class="btn btn-outline-success my-2 my-sm-0" (click) = search() type="submit">Поиск</button></a>
-      <button type="button" class="signIn btn-outline-primary my-2 my-sm-0">Войти</button>
-      <button type="button" class="signUp btn-outline-primary my-2 my-sm-0">Регистрация</button>
+        <a routerLink="/authorization">
+      <button type="button" class="signIn btn-outline-primary my-2 my-sm-0">Войти</button></a>
+        <a routerLink="/registration">
+      <button type="button" class="signUp btn-outline-primary my-2 my-sm-0">Регистрация</button></a>
     </form>
   </div>
 </nav>

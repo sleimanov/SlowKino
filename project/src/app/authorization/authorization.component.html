@@ -1,0 +1,40 @@
+<div class="limiter">
+		<div class="container-login">
+			<div class="login">
+				<form class="login-form">
+					<span class="title">
+						Вход
+					</span>
+
+					<div class="wrap-input">
+						<span class="label-input">Логин</span>
+						<input class="input" type="text" name="username" placeholder="Введите логин">
+						<span class="symbol" data-symbol="&#9830;"></span>
+					</div>
+
+          <br>
+
+					<div class="wrap-input">
+						<span class="label-input">Пароль</span>
+						<input class="input" type="password" name="pass" placeholder="Введите пароль">
+						<span class="symbol" data-symbol="&#9830;"></span>
+					</div>
+
+					<br>
+
+					<div class="container-btn">
+						<div class="wrap-btn">
+							<div class="bgbtn"></div>
+							<button class="btn" (click) = "login()">
+								Войти
+							</button>
+						</div>
+					</div>
+          <div class = "label-input">
+            Нет аккаунта? <a routerLink="/registration">Регистрация</a>
+          </div>
+
+				</form>
+			</div>
+		</div>
+	</div>
