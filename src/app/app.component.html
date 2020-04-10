@@ -1,0 +1,15 @@
+<h1>{{title}}</h1>
+<input type="text" (keyup)="onKey($event)" placeholder="Type for search">
+<a routerLink="/movie-search"><button type="button" name="button"
+          (click) = search()>search</button></a>
+
+<a routerLink="/movie-search"><button type="button" value="Crime"
+(click) = searchByGenre($event)>Crime</button></a>
+
+<a routerLink="/movie-search"><button type="button"
+(click) = searchByGenre(7)>Comedy</button></a>
+
+<a routerLink="/movie-search"><button type="button"
+  (click) = searchByGenre(2)>Drama</button></a>
+
+<router-outlet></router-outlet>

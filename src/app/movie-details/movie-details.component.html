@@ -1,0 +1,32 @@
+<div *ngIf="movie">
+  <div>
+    <label>{{movie.title}}
+      <input [(ngModel)]="movie.title" placeholder="name"/>
+    </label>
+    <label>{{movie.year}}
+      <input [(ngModel)]="movie.year" placeholder="name"/>
+    </label>
+    <label>{{movie.rating}}
+      <input [(ngModel)]="movie.rating" placeholder="name"/>
+    </label>
+
+    <label>Genres:<br></label>
+    <li *ngFor="let genre of movie.genres">
+      <ul>
+        {{genre}}
+      </ul>
+    </li>
+
+    <label>Description <br></label>
+    <p>{{movie.description}}</p>
+
+    <label>Cast</label>
+    <li *ngFor="let str of movie.cast">
+      <ul>
+        {{str}}
+      </ul>
+    </li>
+  </div>
+
+  <button (click)="goBack()">go back</button>
+</div>
