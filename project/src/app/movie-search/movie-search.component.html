@@ -1,0 +1,10 @@
+<div class="body-control alert alert-dark">
+  <h1>Результаты поиска</h1>
+
+  <div *ngFor="let mv of movies; let i = index" >
+    <img class="img{{i+1}}" src={{mv.imgSrc}}>
+    <a routerLink="/movie-details/{{mv.id}}" class="name{{i+1}}">{{mv.title}}</a>
+  </div>
+
+
+</div>

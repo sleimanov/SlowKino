@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MovieService } from './movie.service';
 
 @Component({
   selector: 'app-root',
@@ -7,15 +8,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'project';
-  myImage1:string = "assets/images/John_Wick_3.jpg"
-  myImage2:string = "assets/images/avengers.jpg"
-  myImage3:string = "assets/images/kniga.jpg"
-  myImage4:string = "assets/images/parni.png"
-  myImage5:string = "assets/images/joker.png"
-  myImage6:string = "assets/images/knife.png"
-  myImage7:string = "assets/images/passa.jpg"
-  myImage8:string = "assets/images/nerv.jpg"
-  myImage9:string = "assets/images/sher.jpg"
-  myImage10:string = "assets/images/obman.jpg"
+
   logoImage:string = "assets/images/lol.png"
+  searchValue: string;
+
+  constructor(private movieService: MovieService) { }
+
+  onKey(event){
+    this.searchValue = event.target.value;
+  }
+  search(){
+    this.movieService.search(this.searchValue);
+  }
+  searchByGenre(event){
+    console.log('message');
+    var genre = event.target.value;
+    this.movieService.searchByGenre(genre);
+  }
 }

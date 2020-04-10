@@ -1,17 +1,42 @@
 
-  <img class="newImg" [src]=myImage1>
+  <img class="newImg" src={{movie.imgSrc}}>
 <div class="contain-details alert alert-success">
-  <p><strong>Название: </strong>Джон Уик 3</p>
-  <p><strong>Дата выхода: </strong>15 мая 2019 года</p>
-  <p><strong>Рейтинг: </strong>IMDb: 7.5 (236 319) Кинопоиск: 6.69 (75 333)</p>
-  <p><strong>Жанр: </strong>Боевики, Драмы, Триллеры, Криминал, Зарубежные</p>
-  <p><strong>В ролях: </strong>Киану Ривз, Холли Берри, Иэн МакШейн, Лоренс Фишбёрн, Марк Дакаскос, Азия Диллон, Лэнс Реддик, Тобиаш Сигал, Анжелика Хьюстон, Саид Тагмауи и другие</p>
+  <p><strong>Название: </strong>{{movie.title}}</p>
+  <p><strong>Дата выхода: </strong>{{movie.year}}</p>
+  <p><strong>Рейтинг: </strong>{{movie.rating}}</p>
+  <p><strong>Жанр: </strong>{{movie.genres}}</p>
+  <p><strong>В ролях: </strong>{{movie.cast}}</p>
 </div>
 
 <div class="description alert alert-success">
-  <p><strong>Описание: </strong>В центре сюжета находится Джон Уик — опытный киллер, который убил члена международной гильдии
-    ассасинов на территории отеля "Континенталь", тем самым нарушив профессиональный кодекс, за что был приговорен к смерти. Несмотря на то, что Джона должны были казнить немедленно, ему удалось<br>
-     получить час отсрочки, перед тем, как наемник был признан отступником, отрезанным от гильдии и
-      бывших коллег. И теперь за его голову назначено вознаграждение в 14 миллионов долларов, а десятки
-       самых опасных убийц не остановятся ни перед чем, отправившись на охоту на крайне опасного зверя...</p>
+  <p><strong>Описание: </strong>{{movie.description}}</p>
+</div>
+
+<div class="ngModule alert alert-dark" role="alert">
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Title</span>
+    </div>
+    <input type="text" [(ngModel)]="movie.title" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Year</span>
+    </div>
+    <input type="text" [(ngModel)]="movie.year" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Rate</span>
+    </div>
+    <input type="text" [(ngModel)]="movie.rating" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Desc</span>
+    </div>
+    <input type="text" [(ngModel)]="movie.description" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+
 </div>

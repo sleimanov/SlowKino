@@ -12,8 +12,9 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Поиск" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
+      <input class="form-control mr-sm-2" type="text" (keyup)="onKey($event)" placeholder="Поиск" aria-label="Search">
+      <a routerLink="/movie-search">
+        <button class="btn btn-outline-success my-2 my-sm-0" (click) = search() type="submit">Поиск</button></a>
       <button type="button" class="signIn btn-outline-primary my-2 my-sm-0">Войти</button>
       <button type="button" class="signUp btn-outline-primary my-2 my-sm-0">Регистрация</button>
     </form>
@@ -22,71 +23,20 @@
 
 
 
-  <!-- <div class="header-control alert alert-dark">
-    <h3>Выбор жанра фильма</h3>
-    <button type="button" class="btn1 btn btn-dark">Экшен</button>
-    <button type="button" class="btn2 btn btn-dark">Драма</button>
-    <button type="button" class="btn3 btn btn-dark">Ужасы</button>
-    <button type="button" class="btn4 btn btn-dark">Детективы</button>
-    <button type="button" class="btn5 btn btn-dark">Фантастика</button>
-    <button type="button" class="btn6 btn btn-dark">Романтика</button>
-    <button type="button" class="btn7 btn btn-dark">Комедия</button>
-    <button type="button" class="btn8 btn btn-dark">Триллер</button>
-    <button type="button" class="btn9 btn btn-dark">Криминал</button>
+  <div class="header-control alert alert-dark">
+    <h3>Выбрать жанр</h3>
+
+    <a routerLink="/movie-search">
+    <button (onclick)=searchByGenre($event) value="Экшен" type="button" class="btn1 btn btn-dark">Экшен</button>
+    <button (click)=searchByGenre($event) value="Драма" type="button" class="btn2 btn btn-dark">Драма</button>
+    <button (click)=searchByGenre($event) value="Ужасы" type="button" class="btn3 btn btn-dark">Ужасы</button>
+    <button (click)=searchByGenre($event) value="Детектив" type="button" class="btn4 btn btn-dark">Детектив</button>
+    <button (click)=searchByGenre($event) value="Фантастика" type="button" class="btn5 btn btn-dark">Фантастика</button>
+    <button (click)=searchByGenre($event) value="Романтика" type="button" class="btn6 btn btn-dark">Романтика</button>
+    <button (click)=searchByGenre($event) value="Комедия" type="button" class="btn7 btn btn-dark">Комедия</button>
+    <button (click)=searchByGenre($event) value="Триллер" type="button" class="btn8 btn btn-dark">Триллер</button>
+    <button (click)=searchByGenre($event) value="Криминал" type="button" class="btn9 btn btn-dark">Криминал</button>
+  </a>
   </div>
 
-
-
-<div class="body-control alert alert-dark">
-  <h1>Рекомендуем посмотреть</h1>
-
-  <div class="box1">
-    <img class="img1" [src]=myImage1>
-    <a href="#" class="nameF">Джон Уик 3</a>
-  </div>
-  <div class="box2">
-    <img class="img2" [src]=myImage2>
-    <a href="#" class="nameS">Мстители: Финал</a>
-  </div>
-  <div class="box3">
-    <img class="img3" [src]=myImage3>
-    <a href="#" class="nameT">Зеленая книга</a>
-  </div>
-  <div class="box4">
-    <img class="img4" [src]=myImage4>
-    <a href="#" class="nameFo">Плохие парни навсегда</a>
-  </div>
-  <div class="box5">
-    <img class="img5" [src]=myImage5>
-    <a href="#" class="nameFi">Джокер</a>
-  </div>
-</div>
-
-<div class="bottom-control alert alert-dark">
-  <h2>Детективы</h2>
-
-  <div class="box6">
-    <img class="img6" [src]=myImage6>
-    <a href="#" class="name1">Достать ножи</a>
-  </div>
-  <div class="box7">
-    <img class="img7" [src]=myImage7>
-    <a href="#" class="name2">Пассажир</a>
-  </div>
-  <div class="box8">
-    <img class="img8" [src]=myImage8>
-    <a href="#" class="name3">Нерв</a>
-  </div>
-  <div class="box9">
-    <img class="img9" [src]=myImage9>
-    <a href="#" class="name4">Шерлок Холмс: Игра теней</a>
-  </div>
-  <div class="box10">
-    <img class="img10" [src]=myImage10>
-    <a href="#" class="name5">Иллюзия обмана</a>
-  </div>
-</div>
-
-
-<router-outlet></router-outlet> -->
-<app-movie-details>
+  <router-outlet></router-outlet>

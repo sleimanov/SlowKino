@@ -1,0 +1,38 @@
+<div class="body-control alert alert-dark">
+  <h1>Рекомендуем посмотреть</h1>
+
+  <div *ngFor="let mv of movies; let i = index" >
+    <img class="img{{mv.id}}" src={{mv.imgSrc}}>
+    <a routerLink="/movie-details/{{mv.id}}" class="name{{i+1}}">{{mv.title}}</a>
+  </div>
+
+
+</div>
+
+<div class="bottom-control alert alert-dark">
+  <h2>Детективы</h2>
+
+  <div class="box6">
+    <img class="img6" [src]=myImage6>
+    <a href="#" class="name1">Достать ножи</a>
+  </div>
+  <div class="box7">
+    <img class="img7" [src]=myImage7>
+    <a href="#" class="name2">Пассажир</a>
+  </div>
+  <div class="box8">
+    <img class="img8" [src]=myImage8>
+    <a href="#" class="name3">Нерв</a>
+  </div>
+  <div class="box9">
+    <img class="img9" [src]=myImage9>
+    <a href="#" class="name4">Шерлок Холмс: Игра теней</a>
+  </div>
+  <div class="box10">
+    <img class="img10" [src]=myImage10>
+    <a href="#" class="name5">Иллюзия обмана</a>
+  </div>
+</div>
+
+
+<router-outlet></router-outlet>

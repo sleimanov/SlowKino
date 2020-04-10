@@ -1,19 +1,28 @@
 .newImg {
-  margin-left: 150px;
-  margin-top: 50px;
+  margin-left: 165px;
+  margin-top: 80px;
   height: 350px;
   width: auto;
 }
 .contain-details {
-  margin-left: 410px;
-  margin-top: -355px;
-  width: 520px;
+  margin-left: 415px;
+  margin-top: -350px;
+  width: 530px;
+  height: 350px;
   font-size: 18px;
   color: black;
 }
 .description {
-  margin-left: 150px;
+  margin-left: 165px;
   width: 780px;
+  top: 5px;
   font-size: 18px;
   color: black;
+}
+.ngModule {
+  position: absolute;
+  top: 250px;
+  left: 960px;
+  width: 340px;
+  height: 350px;
 }

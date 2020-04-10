@@ -1,0 +1,258 @@
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.btn-outline-success {
+    color: #28a745;
+    background-color: transparent;
+    background-image: none;
+    border-color: #28a745;
+}
+.signIn {
+  height: 38px;
+  border-radius: 5px;
+  margin-left: 8px;
+  background-color: transparent;
+}
+.signUp {
+  height: 38px;
+  border-radius: 5px;
+  margin-left: 8px;
+  background-color: transparent;
+}
+.bg-dark {
+    background-color: #343a40!important;
+}
+@media (min-width: 768px)
+.navbar-expand-md {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+.navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+h3 {
+  margin-top: 20px;
+  font-family: sans-serif;
+  font-size: 25px;
+  margin-left: 150px;
+}
+.body-control {
+  margin-top: 150px;
+}
+h1 {
+  margin-top: 20px;
+  font-family: sans-serif;
+  font-size: 25px;
+  margin-left: 150px;
+}
+.img1 {
+  margin-top: 40px;
+  margin-left: 150px;
+  width: 185px;
+  height: 278px;
+}
+.name1 {
+  position: absolute;
+  left: 172px;
+  top: 430px;
+  font-family: sans-serif;
+  font-size: 19px;
+  color: black;
+}
+.img2 {
+  margin-left: 370px;
+  margin-top: -310px;
+  width: 185px;
+  height: 278px;
+}
+.name2 {
+  position: absolute;
+  left: 392px;
+  top: 430px;
+  width: 278px;
+  font-family: sans-serif;
+  font-size: 19px;
+  color: black;
+}
+.img3 {
+  width: 185px;
+  height: 278px;
+  margin-top: -354px;
+  margin-left: 590px;
+}
+.name3 {
+  position: absolute;
+  left: 612px;
+  top: 430px;
+  font-family: sans-serif;
+  font-size: 19px;
+  color: black;
+}
+.img4 {
+  width: 185px;
+  height: 278px;
+  margin-top: -400px;
+  margin-left: 810px;
+}
+.name4 {
+  position: absolute;
+  left: 832px;
+  top: 430px;
+  font-family: sans-serif;
+  font-size: 19px;
+  color: black;
+}
+.img5 {
+  width: 185px;
+  height: 278px;
+  margin-top: -445px;
+  margin-left: 1030px;
+}
+.name5 {
+  position: absolute;
+  left: 1052px;
+  top: 430px;
+  font-family: sans-serif;
+  font-size: 19px;
+  color: black;
+}
+h2 {
+  margin-top: 50px;
+  font-family: sans-serif;
+  font-size: 25px;
+  margin-left: 150px;
+}
+.img6 {
+  width: 185px;
+  height: 278px;
+  margin-top: 40px;
+  margin-left: 150px;
+}
+.name6 {
+  position: absolute;
+  left: 208px;
+  top: 430px;
+  font-family: sans-serif;
+  font-size: 19px;
+  color: black;
+}
+.img7 {
+  margin-left: 370px;
+  margin-top: -305px;
+  width: 185px;
+  height: 278px;
+}
+.name7 {
+  position: absolute;
+  left: 430px;
+  top: 430px;
+  font-family: sans-serif;
+  font-size: 19px;
+  color: black;
+}
+.img8 {
+  width: 185px;
+  height: 278px;
+  margin-top: -354px;
+  margin-left: 590px;
+}
+.name8 {
+  position: absolute;
+  left: 670px;
+  top: 430px;
+  font-family: sans-serif;
+  font-size: 19px;
+  color: black;
+}
+.img9 {
+  width: 185px;
+  height: 278px;
+  margin-top: -400px;
+  margin-left: 810px;
+}
+.name9 {
+  position: absolute;
+  left: 800px;
+  top: 430px;
+  font-family: sans-serif;
+  font-size: 19px;
+  color: black;
+}
+.img10 {
+  width: 185px;
+  height: 278px;
+  margin-top: -445px;
+  margin-left: 1035px;
+}
+.name10 {
+  position: absolute;
+  left: 1070px;
+  top: 430px;
+  font-family: sans-serif;
+  font-size: 19px;
+  color: black;
+}
+.btn1 {
+  position: absolute;
+  left: 170px;
+  top: 110px;
+}
+.btn2 {
+  position: absolute;
+  top: 110px;
+  left: 280px;
+}
+.btn3 {
+  position: absolute;
+  top: 110px;
+  left: 390px;
+}
+.btn4 {
+  position: absolute;
+  top: 110px;
+  left: 500px;
+}
+.btn5 {
+  position: absolute;
+  top: 110px;
+  left: 645px;
+}
+.btn6 {
+  position: absolute;
+  top: 110px;
+  left: 790px;
+}
+.btn7 {
+  position: absolute;
+  top: 110px;
+  left: 930px;
+}
+.btn8 {
+  position: absolute;
+  top: 110px;
+  left: 1060px;
+}
+.btn9 {
+  position: absolute;
+  top: 110px;
+  left: 1190px;
+}
+.logo {
+  height: 56px;
+  width: 60px;
+}
