@@ -11,7 +11,7 @@ export class MovieService {
 
   findedMovies: Movie[] = [];
 
-  constructor(@Inject(DOCUMENT) document) { }
+  constructor() { }
 
   getMovies(): Observable<Movie[]> {
     return of(MOVIES);
@@ -32,10 +32,14 @@ export class MovieService {
   }
 
   searchByGenre(genre: string){
-    
+
     for(let mv of MOVIES){
       if(mv.genres.includes(genre)) this.findedMovies.push(mv);
     }
+  }
+
+  clear(){
+    this.findedMovies = [];
   }
 
 

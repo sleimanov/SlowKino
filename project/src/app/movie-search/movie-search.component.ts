@@ -10,7 +10,7 @@ import { MovieService } from '../movie.service';
 export class MovieSearchComponent implements OnInit {
 
   movies: Movie[];
-  constructor(private movieService: MovieService) { }
+  constructor(public movieService: MovieService) { }
 
   ngOnInit(): void {
     this.getMovies();
@@ -19,5 +19,6 @@ export class MovieSearchComponent implements OnInit {
   getMovies(): void {
     this.movieService.getFindedMovies()
     .subscribe(movies => this.movies = movies);
+
   }
 }

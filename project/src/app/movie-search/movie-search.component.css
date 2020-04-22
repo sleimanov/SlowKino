@@ -52,7 +52,7 @@ h3 {
   margin-left: 150px;
 }
 .body-control {
-  margin-top: 150px;
+  margin-top: 90px;
 }
 h1 {
   margin-top: 20px;
@@ -68,8 +68,9 @@ h1 {
 }
 .name1 {
   position: absolute;
-  left: 205px;
-  top: 430px;
+  left: 172px;
+  top: 410px;
+  width: 185px;
   font-family: sans-serif;
   font-size: 19px;
   color: black;
@@ -82,8 +83,9 @@ h1 {
 }
 .name2 {
   position: absolute;
-  left: 408px;
-  top: 430px;
+  left: 392px;
+  top: 410px;
+  width: 185px;
   font-family: sans-serif;
   font-size: 19px;
   color: black;
@@ -96,8 +98,9 @@ h1 {
 }
 .name3 {
   position: absolute;
-  left: 635px;
-  top: 430px;
+  left: 612px;
+  top: 410px;
+  width: 185px;
   font-family: sans-serif;
   font-size: 19px;
   color: black;
@@ -110,8 +113,9 @@ h1 {
 }
 .name4 {
   position: absolute;
-  left: 815px;
-  top: 430px;
+  left: 832px;
+  top: 410px;
+  width: 185px;
   font-family: sans-serif;
   font-size: 19px;
   color: black;
@@ -124,8 +128,9 @@ h1 {
 }
 .name5 {
   position: absolute;
-  left: 1100px;
-  top: 430px;
+  left: 1052px;
+  top: 410px;
+  width: 185px;
   font-family: sans-serif;
   font-size: 19px;
   color: black;
@@ -144,8 +149,9 @@ h2 {
 }
 .name6 {
   position: absolute;
-  left: 208px;
-  top: 430px;
+  left: 172px;
+  top: 810px;
+  width: 185px;
   font-family: sans-serif;
   font-size: 19px;
   color: black;
@@ -158,8 +164,9 @@ h2 {
 }
 .name7 {
   position: absolute;
-  left: 430px;
-  top: 430px;
+  left: 392px;
+  top: 810px;
+  width: 185px;
   font-family: sans-serif;
   font-size: 19px;
   color: black;
@@ -172,8 +179,9 @@ h2 {
 }
 .name8 {
   position: absolute;
-  left: 670px;
-  top: 430px;
+  left: 612px;
+  top: 810px;
+  width: 185px;
   font-family: sans-serif;
   font-size: 19px;
   color: black;
@@ -186,8 +194,9 @@ h2 {
 }
 .name9 {
   position: absolute;
-  left: 800px;
-  top: 430px;
+  left: 832px;
+  top: 810px;
+  width: 185px;
   font-family: sans-serif;
   font-size: 19px;
   color: black;
@@ -200,8 +209,8 @@ h2 {
 }
 .name10 {
   position: absolute;
-  left: 1070px;
-  top: 430px;
+  left: 1052px;
+  top: 810px;
   font-family: sans-serif;
   font-size: 19px;
   color: black;

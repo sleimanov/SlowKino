@@ -2,8 +2,8 @@
   <h1>Рекомендуем посмотреть</h1>
 
   <div *ngFor="let mv of movies; let i = index" >
-    <img class="img{{mv.id}}" src={{mv.imgSrc}}>
-    <a routerLink="/movie-details/{{mv.id}}" class="name{{i+1}}">{{mv.title}}</a>
+    <img class="img{{mv.id}}" src={{mv.imgSrc}} *ngIf="i<5"  >
+    <a routerLink="/movie-details/{{mv.id}}" class="name{{i+1}}" *ngIf="i<5">{{mv.title}}</a>
   </div>
 
 
@@ -14,25 +14,22 @@
 
   <div class="box6">
     <img class="img6" [src]=myImage6>
-    <a href="#" class="name1">Достать ножи</a>
+    <a routerLink="/movie-details/6" class="name6">Достать ножи</a>
   </div>
   <div class="box7">
     <img class="img7" [src]=myImage7>
-    <a href="#" class="name2">Пассажир</a>
+    <a routerLink="/movie-details/7" class="name7">Пассажир</a>
   </div>
   <div class="box8">
     <img class="img8" [src]=myImage8>
-    <a href="#" class="name3">Нерв</a>
+    <a routerLink="/movie-details/8" class="name8">Нерв</a>
   </div>
   <div class="box9">
     <img class="img9" [src]=myImage9>
-    <a href="#" class="name4">Шерлок Холмс: Игра теней</a>
+    <a routerLink="/movie-details/9" class="name9">Шерлок Холмс: Игра теней</a>
   </div>
   <div class="box10">
     <img class="img10" [src]=myImage10>
-    <a href="#" class="name5">Иллюзия обмана</a>
+    <a routerLink="/movie-details/10" class="name10">Иллюзия обмана</a>
   </div>
 </div>
-
-
-<router-outlet></router-outlet>

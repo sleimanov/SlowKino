@@ -29,7 +29,7 @@
     <h3>Выбрать жанр</h3>
 
     <a routerLink="/movie-search">
-    <button (onclick)=searchByGenre($event) value="Экшен" type="button" class="btn1 btn btn-dark">Экшен</button>
+    <button (click)=searchByGenre($event) value="Экшен" type="button" class="btn1 btn btn-dark">Экшен</button>
     <button (click)=searchByGenre($event) value="Драма" type="button" class="btn2 btn btn-dark">Драма</button>
     <button (click)=searchByGenre($event) value="Ужасы" type="button" class="btn3 btn btn-dark">Ужасы</button>
     <button (click)=searchByGenre($event) value="Детектив" type="button" class="btn4 btn btn-dark">Детектив</button>
@@ -39,6 +39,8 @@
     <button (click)=searchByGenre($event) value="Триллер" type="button" class="btn8 btn btn-dark">Триллер</button>
     <button (click)=searchByGenre($event) value="Криминал" type="button" class="btn9 btn btn-dark">Криминал</button>
   </a>
+  
+
   </div>
 
   <router-outlet></router-outlet>

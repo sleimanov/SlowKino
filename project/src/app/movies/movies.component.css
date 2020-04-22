@@ -52,7 +52,7 @@ h3 {
   margin-left: 150px;
 }
 .body-control {
-  margin-top: 150px;
+  margin-top: 90px;
 }
 h1 {
   margin-top: 20px;
@@ -69,7 +69,7 @@ h1 {
 .name1 {
   position: absolute;
   left: 172px;
-  top: 430px;
+  top: 410px;
   font-family: sans-serif;
   font-size: 19px;
   color: black;
@@ -83,7 +83,7 @@ h1 {
 .name2 {
   position: absolute;
   left: 392px;
-  top: 430px;
+  top: 410px;
   width: 278px;
   font-family: sans-serif;
   font-size: 19px;
@@ -98,7 +98,7 @@ h1 {
 .name3 {
   position: absolute;
   left: 612px;
-  top: 430px;
+  top: 410px;
   font-family: sans-serif;
   font-size: 19px;
   color: black;
@@ -112,7 +112,7 @@ h1 {
 .name4 {
   position: absolute;
   left: 832px;
-  top: 430px;
+  top: 410px;
   font-family: sans-serif;
   font-size: 19px;
   color: black;
@@ -126,7 +126,7 @@ h1 {
 .name5 {
   position: absolute;
   left: 1052px;
-  top: 430px;
+  top: 410px;
   font-family: sans-serif;
   font-size: 19px;
   color: black;
@@ -145,7 +145,7 @@ h2 {
 }
 .name6 {
   position: absolute;
-  left: 208px;
+  left: 172px;
   top: 430px;
   font-family: sans-serif;
   font-size: 19px;
@@ -159,7 +159,7 @@ h2 {
 }
 .name7 {
   position: absolute;
-  left: 430px;
+  left: 392px;
   top: 430px;
   font-family: sans-serif;
   font-size: 19px;
@@ -173,7 +173,7 @@ h2 {
 }
 .name8 {
   position: absolute;
-  left: 670px;
+  left: 612px;
   top: 430px;
   font-family: sans-serif;
   font-size: 19px;
@@ -187,8 +187,9 @@ h2 {
 }
 .name9 {
   position: absolute;
-  left: 800px;
+  left: 832px;
   top: 430px;
+  width: 185px;
   font-family: sans-serif;
   font-size: 19px;
   color: black;
@@ -201,7 +202,7 @@ h2 {
 }
 .name10 {
   position: absolute;
-  left: 1070px;
+  left: 1052px;
   top: 430px;
   font-family: sans-serif;
   font-size: 19px;

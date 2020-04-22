@@ -1,3 +1,5 @@
+<div *ngIf="movieService.findedMovies.length">
+
 <div class="body-control alert alert-dark">
   <h1>Результаты поиска</h1>
 
@@ -6,5 +8,5 @@
     <a routerLink="/movie-details/{{mv.id}}" class="name{{i+1}}">{{mv.title}}</a>
   </div>
 
-
+  </div>
 </div>
