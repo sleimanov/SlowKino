@@ -10,7 +10,9 @@ export class AppComponent {
   title = 'project';
 
   logoImage:string = "assets/images/lol.png"
-  searchValue: string = '';
+  searchValue:string = '';
+  log:boolean = false;
+
 
   constructor(private movieService: MovieService) { }
 
@@ -23,11 +25,11 @@ export class AppComponent {
       console.log('wtf');
     this.movieService.search(this.searchValue);}
   }
-  searchByGenre(event){
-    var genre = event.target.value;
-    this.movieService.searchByGenre(genre);
-  }
+
   clear(){
     this.movieService.clear();
+  }
+  login(){
+    this.log = !this.log;
   }
 }

@@ -6,6 +6,7 @@
   <p><strong>Рейтинг: </strong>{{movie.rating}}</p>
   <p><strong>Жанр: </strong>{{movie.genres}}</p>
   <p><strong>В ролях: </strong>{{movie.cast}}</p>
+  <p><strong>Бюджет: </strong></p>
 </div>
 
 <div class="description alert alert-success">
@@ -36,7 +37,23 @@
     <div class="input-group-prepend">
       <span class="input-group-text" id="basic-addon1">Desc</span>
     </div>
-    <input type="text" [(ngModel)]="movie.description" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+    <!-- <input type="text" [(ngModel)]="movie.description" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"> -->
+    <textarea rows="4" cols="40" [(ngModel)]="movie.description" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"></textarea>
   </div>
 
+</div>
+
+<div class="comment-control alert alert-secondary">
+  <div class="text-control">
+    <p id="commentWord"><strong>Оставьте свой отзыв</strong></p>
+    <textarea rows="5" cols="85" id="txtArea"></textarea>
+    <div class="button-control">
+      <button type="submit" class="submitCom btn btn-info my-2 my-sm-0">Отправить</button>
+    </div>
+  </div>
+  <div class="comment-list alert alert-secondary">
+    <img [src]=imageAvatar id="avatarLogo">
+    <p id="usernameCom"><strong>slowpoke</strong></p>
+    <p id="textCom">Отличный фильм</p>
+  </div>
 </div>

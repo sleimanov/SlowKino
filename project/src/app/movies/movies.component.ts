@@ -16,6 +16,13 @@ export class MoviesComponent implements OnInit {
   myImage8:string = "assets/images/nerv.jpg"
   myImage9:string = "assets/images/sher.jpg"
   myImage10:string = "assets/images/obman.jpg"
+  imageSlide1:string = "assets/images/bloodshot.jpg"
+  imageSlide2:string = "assets/images/black_widow.jpg"
+  imageSlide3:string = "assets/images/bond.jpg"
+  imageSlide4:string = "assets/images/artemis.jpg"
+  imageSlide5:string = "assets/images/ford-vs-ferrari.jpg"
+  telegramLogo:string = "assets/images/telegram.png"
+
 
   constructor(private movieService: MovieService) { }
 
@@ -27,5 +34,9 @@ export class MoviesComponent implements OnInit {
   this.movieService.getMovies()
   .subscribe(movies => this.movies = movies);
 }
+  searchByGenre(event){
+    var genre = event.target.value;
+    this.movieService.searchByGenre(genre);
+  }
 
 }

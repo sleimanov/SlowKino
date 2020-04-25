@@ -13,6 +13,8 @@ export class MovieDetailsComponent implements OnInit {
 
   movie: Movie;
 
+  imageAvatar:string = "assets/images/avatar.png"
+
   constructor(
     private route: ActivatedRoute,
     private movieService: MovieService,

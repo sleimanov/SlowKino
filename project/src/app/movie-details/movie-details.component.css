@@ -1,6 +1,6 @@
 .newImg {
   margin-left: 165px;
-  margin-top: 80px;
+  margin-top: 30px;
   height: 350px;
   width: auto;
 }
@@ -21,7 +21,7 @@
 }
 .ngModule {
   position: absolute;
-  top: 250px;
+  top: 102px;
   left: 960px;
   width: 340px;
   height: 350px;
@@ -36,4 +36,47 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+#txtArea {
+  margin-left: 143px;
+  border: 1px solid gray;
+  font-size: 18px;
+  border-radius: 5px;
+}
+#commentWord {
+  margin-left: 160px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+.submitCom {
+  margin-left: 825px;
+}
+.comment-control {
+  height: auto;
+}
+
+.comment-list {
+  margin-top: 15px;
+  margin-left: 142px;
+  width: 788px;
+  border: 2px solid gray;
+}
+#avatarLogo {
+  width: 60px;
+  height: 60px;
+  margin-left: 4px;
+}
+#usernameCom {
+  font-size: 15px;
+  font-family: sans-serif;
+  position: absolute;
+  bottom: 30px;
+  left: 110px;
+}
+#textCom {
+  font-size: 15px;
+  font-family: sans-serif;
+  position: absolute;
+  left: 110px;
+  top: 48px;
 }

@@ -54,53 +54,14 @@ h3 {
 .body-control {
   margin-top: 150px;
 }
-
-.btn1 {
-  position: absolute;
-  left: 170px;
-  top: 110px;
-}
-.btn2 {
-  position: absolute;
-  top: 110px;
-  left: 280px;
-}
-.btn3 {
-  position: absolute;
-  top: 110px;
-  left: 390px;
-}
-.btn4 {
-  position: absolute;
-  top: 110px;
-  left: 500px;
-}
-.btn5 {
-  position: absolute;
-  top: 110px;
-  left: 645px;
-}
-.btn6 {
-  position: absolute;
-  top: 110px;
-  left: 790px;
-}
-.btn7 {
-  position: absolute;
-  top: 110px;
-  left: 930px;
-}
-.btn8 {
-  position: absolute;
-  top: 110px;
-  left: 1060px;
-}
-.btn9 {
-  position: absolute;
-  top: 110px;
-  left: 1190px;
-}
 .logo {
   height: 56px;
   width: 60px;
+}
+.dropdown {
+  margin-left: 8px;
+  margin-right: 34px;
+}
+.hiddenBtn {
+  border: 0px;
 }

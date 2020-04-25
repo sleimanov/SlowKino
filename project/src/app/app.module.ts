@@ -9,6 +9,9 @@ import { MovieSearchComponent } from './movie-search/movie-search.component';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { AuthorizationComponent } from './authorization/authorization.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { ProfileComponent } from './profile/profile.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ActorComponent } from './actor/actor.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { RegistrationComponent } from './registration/registration.component';
     MovieSearchComponent,
     MovieDetailsComponent,
     AuthorizationComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    ProfileComponent,
+    AboutUsComponent,
+    ActorComponent
   ],
   imports: [
     BrowserModule,

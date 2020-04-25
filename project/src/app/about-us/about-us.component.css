@@ -1,0 +1,20 @@
+h1 {
+  font-family: cursive;
+  font-size: 35px;
+  margin-left: 40%;
+}
+.awka {
+  font-family: fantasy;
+  color: black;
+}
+#devizSlova {
+  margin-left: 36%;
+  font-size: 25px;
+  font-family: monospace;
+}
+.card-deck {
+  padding: 15px;
+}
+.rofl-banner {
+  margin-top: 45px;
+}
