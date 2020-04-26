@@ -1,24 +1,47 @@
 import { Injectable } from '@angular/core';
 import { Inject } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
 import { Observable, of } from 'rxjs';
+import { MainService } from './main.service';
+import {HttpClient, HttpHeaders} from "@angular/common/http";
 
-import { Movie } from './movie';
-import { MOVIES } from './mock-movies';
+import { Movie, Actor, Comment, IAuthResponse } from './models';
 
 @Injectable({ providedIn: 'root' })
-export class MovieService {
-
+export class MovieService extends MainService{
+  BASE_URL = 'http://127.0.0.1:8000';
+  httpHeaders = new HttpHeaders({'Content-Type': 'application/json'});
   findedMovies: Movie[] = [];
+  allMovies: Movie[] = [];
 
-  constructor() { }
-
-  getMovies(): Observable<Movie[]> {
-    return of(MOVIES);
+  constructor(http: HttpClient) {
+    super(http)
   }
 
-  getMovie(id: number): Observable<Movie> {
-    return of(MOVIES.find(movie => movie.id === id));
+  auth1(login: string, password: string): Promise<IAuthResponse> {
+    return this.post(this.BASE_URL + '/api/login/', {
+    username: login,
+    password: password
+    });
+  }
+
+  logout():Promise<any>{
+    return this.post(this.BASE_URL + '/api/login/',{})
+  }
+
+  getComments(id: number): Promise<Comment[]> {
+    return this.get(this.BASE_URL + '/api/movies/' + id + '/comments', {});
+  }
+
+  getAllMovies(): Promise<Movie[]> {
+    return  this.get(`${this.BASE_URL}/api/movies/`,{});
+  }
+
+  getOneMovie(id: number): Promise<Movie> {
+    return this.get(this.BASE_URL + '/api/movies/' + id, {});
+  }
+
+  getMovieActors(id: number) : Promise<Actor[]> {
+    return this.get(this.BASE_URL + '/api/movies/' + id + '/actors', {});
   }
 
   getFindedMovies(): Observable<Movie[]>{
@@ -26,16 +49,13 @@ export class MovieService {
   }
 
   search(title: string){
-    for(let mv of MOVIES){
+    for(let mv of this.allMovies){
       if(mv.title.search(title) != -1) this.findedMovies.push(mv);
     }
   }
 
-  searchByGenre(genre: string){
-
-    for(let mv of MOVIES){
-      if(mv.genres.includes(genre)) this.findedMovies.push(mv);
-    }
+  searchByGenre(id: number){
+    return this.http.get<Movie[]>(this.BASE_URL + '/api/genres/' + id + '/movies');
   }
 
   clear(){

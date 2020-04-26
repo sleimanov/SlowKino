@@ -8,7 +8,7 @@
 
 					<div class="wrap-input">
 						<span class="label-input">Логин</span>
-						<input class="input" type="text" name="username" placeholder="Введите логин">
+						<input class="input" type="text" [(ngModel)]="username" [ngModelOptions]="{standalone: true}" placeholder="Введите логин">
 						<span class="symbol" data-symbol="&#9830;"></span>
 					</div>
 
@@ -16,7 +16,7 @@
 
 					<div class="wrap-input">
 						<span class="label-input">Пароль</span>
-						<input class="input" type="password" name="pass" placeholder="Введите пароль">
+						<input class="input" type="password" name="pass" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" placeholder="Введите пароль">
 						<span class="symbol" data-symbol="&#9830;"></span>
 					</div>
 
@@ -25,7 +25,7 @@
 					<div class="container-btn">
 						<div class="wrap-btn">
 							<div class="bgbtn"></div>
-							<button class="btn" (click) = "login()">
+							<button class="btn" (click) = "auth()">
 								Войти
 							</button>
 						</div>

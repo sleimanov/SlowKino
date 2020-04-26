@@ -88,7 +88,7 @@
   <h1>Рекомендуем посмотреть</h1>
 
   <div *ngFor="let mv of movies; let i = index" >
-    <img class="img{{mv.id}}" src={{mv.imgSrc}} *ngIf="i<5"  >
+    <img class="img{{mv.id}}" src={{mv.posterSrc}} *ngIf="i<5"  >
     <a routerLink="/movie-details/{{mv.id}}" class="name{{i+1}}" *ngIf="i<5">{{mv.title}}</a>
   </div>
 </div>

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Movie } from '../movie';
+import { Movie } from '../models';
 import { MovieService } from '../movie.service';
 @Component({
   selector: 'app-movies',
@@ -31,8 +31,8 @@ export class MoviesComponent implements OnInit {
   }
 
   getMovies(): void {
-  this.movieService.getMovies()
-  .subscribe(movies => this.movies = movies);
+  this.movieService.getAllMovies()
+  .then(movies => {this.movies = movies});
 }
   searchByGenre(event){
     var genre = event.target.value;
