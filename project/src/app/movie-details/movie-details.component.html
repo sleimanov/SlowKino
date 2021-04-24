@@ -1,0 +1,65 @@
+<div *ngIf="actors" >
+
+  <img class="newImg" src={{movie.posterSrc}}>
+<div class="contain-details alert alert-success">
+  <p><strong>Название: </strong>{{movie.title}}</p>
+  <p><strong>Дата выхода: </strong>{{movie.year}}</p>
+  <p><strong>Рейтинг: </strong>{{movie.rating}}</p>
+  <p><strong>Жанр: </strong><a >{{movie.genres}}</a></p>
+  <p><strong>В ролях: </strong><a href="#">{{actors[0].name}}</a></p>
+  <p><strong>Бюджет: </strong>{{movie.budget}}</p>
+  <p><strong>Бюджет: </strong>{{comments[0].text}}</p>
+</div>
+
+<div class="description alert alert-success">
+  <p><strong>Описание: </strong>{{movie.description}}</p>
+</div>
+
+<div class="ngModule alert alert-dark" role="alert">
+<h6>Редактировать</h6><br>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Title</span>
+    </div>
+    <input type="text" [(ngModel)]="movie.title" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Year</span>
+    </div>
+    <input type="text" [(ngModel)]="movie.year" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Rate</span>
+    </div>
+    <input type="text" [(ngModel)]="movie.rating" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Desc</span>
+    </div>
+    <!-- <input type="text" [(ngModel)]="movie.description" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"> -->
+    <textarea rows="4" cols="40" [(ngModel)]="movie.description" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"></textarea>
+  </div>
+
+</div>
+
+<div class="comment-control alert alert-secondary">
+  <div class="text-control">
+    <p id="commentWord"><strong>Оставьте свой отзыв</strong></p>
+    <textarea [(ngModel)]="comment.text"  rows="5" cols="85" id="txtArea"></textarea>
+    <div class="button-control">
+      <button type="submit" class="submitCom btn btn-info my-2 my-sm-0" (click)=createComment()>Отправить</button>
+    </div>
+  </div>
+
+  <div class="comment-list alert alert-secondary">
+    <img [src]=imageAvatar id="avatarLogo">
+    <p id="usernameCom"><strong>{{comments[0]}}</strong></p>
+    <p id="textCom">{{comments[0].text}}</p>
+  </div>
+
+</div>
+
+</div>

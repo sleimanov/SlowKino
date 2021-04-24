@@ -1,0 +1,79 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark sticky-top">
+  <img class="logo" [src]=logoImage>
+  <a class="navbar-brand" href="#">SlowKino</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Главная<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/about-us" style="color:white">О нас</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" (keyup)="onKey($event)" placeholder="Поиск" aria-label="Search">
+      <a routerLink="/movie-search">
+        <button class="btn btn-outline-success my-2 my-sm-0" (click) = search() type="submit">Поиск</button></a>
+        <a routerLink="/authorization">
+      <button type="button" class="signIn btn-outline-primary my-2 my-sm-0" (click)=login() *ngIf="!log" >Войти</button></a>
+        <a routerLink="/registration">
+      <button type="button" class="signUp btn-outline-primary my-2 my-sm-0" *ngIf="!log" >Регистрация</button></a>
+    </form>
+  </div>
+  <div class="dropdown" *ngIf="log" >
+    <button class="hiddenBtn btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    slowpoke
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" routerLink="/profile">Мой профиль</a>
+    <a class="dropdown-item" href="#">Выйти</a>
+  </div>
+  </div>
+</nav><br><br><br>
+
+  <router-outlet></router-outlet>
+
+  <footer class="container-fluid py-3" style="background-color:#343a40; margin-top: 40px;" >
+    <div class="row">
+      <div class="col-12 col-md">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24" focusable="false" style="color:white"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
+        <small class="d-block mb-3" style="color:white;">© 2020 Slowkino.com</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5 style="color:white;">Разработчики</h5>
+        <ul class="list-unstyled text-small">
+          <li><a href="https://t.me/neznaayu">Divvares</a></li>
+          <li><a href="https://t.me/ushermanz">Ushermanz</a></li>
+          <li><a href="https://t.me/a130201">A130201</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5 style="color:white;">Ресурсы</h5>
+        <ul class="list-unstyled text-small">
+          <li><a href="https://bootstrap-4.ru/">Bootstrap</a></li>
+          <li><a href="#">Resource name</a></li>
+          <li><a href="#">Another resource</a></li>
+          <li><a href="#">Final resource</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5 style="color:white;">Интересные сайты</h5>
+        <ul class="list-unstyled text-small">
+          <li><a href="https://zoomquilt2.com/">Zoomquilt</a></li>
+          <li><a href="http://rainfor.me/">Rain</a></li>
+          <li><a href="http://stars.chromeexperiments.com/">Milky Way</a></li>
+          <li><a href="https://randstuff.ru/ask/">Предсказание(рофл)</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5 style="color:white;">О нас</h5>
+        <ul class="list-unstyled text-small">
+          <li><a routerLink="/about-us">Команда</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>

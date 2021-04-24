@@ -1,0 +1,152 @@
+<div class="header-control alert alert-dark">
+  <h3>Выбрать жанр</h3>
+
+  <a routerLink="/movie-search">
+  <button (click)=searchByGenre($event) value="Экшен" type="button" class="btn1 btn btn-dark">Экшен</button>
+  <button (click)=searchByGenre($event) value="Драма" type="button" class="btn2 btn btn-dark">Драма</button>
+  <button (click)=searchByGenre($event) value="Ужасы" type="button" class="btn3 btn btn-dark">Ужасы</button>
+  <button (click)=searchByGenre($event) value="Детектив" type="button" class="btn4 btn btn-dark">Детектив</button>
+  <button (click)=searchByGenre($event) value="Фантастика" type="button" class="btn5 btn btn-dark">Фантастика</button>
+  <button (click)=searchByGenre($event) value="Романтика" type="button" class="btn6 btn btn-dark">Романтика</button>
+  <button (click)=searchByGenre($event) value="Комедия" type="button" class="btn7 btn btn-dark">Комедия</button>
+  <button (click)=searchByGenre($event) value="Триллер" type="button" class="btn8 btn btn-dark">Триллер</button>
+  <button (click)=searchByGenre($event) value="Криминал" type="button" class="btn9 btn btn-dark">Криминал</button>
+</a>
+</div>
+
+<h1 id="message">Скоро в кино</h1>
+
+<div class="container-fluid cr1">
+  <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel" data-interval="2400">
+    <!-- <ol class="carousel-indicators">
+      <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol> -->
+    <div class="carousel-inner">
+      <div class="carousel-item active img-fluid">
+      <img [src]=imageSlide1 alt="Bloodshot" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block">
+        <h5>Бладшот</h5>
+        <p>Корпорация RST возвращает к жизни недавно убитого солдата Рэя Гаррисона. Армия нанороботов в его крови превратила Рэя
+           в бессмертного Бладшота, наделенного сверхчеловеческой силой и способностью мгновенно самоисцеляться. Контролируя тело
+          Рэя, компания влияет на его разум и воспоминания. Но герой пойдет на все, чтобы выяснить правду.</p>
+      </div>
+      </div>
+      <div class="carousel-item img-fluid">
+        <img [src]=imageSlide2 alt="Black Widow" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block">
+        <h5>Черная вдова</h5>
+        <p>После событий в аэропорту «Лейпциг-Галле» Наташу настигли ошибки прошлого. Вновь дала о себе знать «Красная комната»
+           — программа по созданию таких же, как она, Вдов — профессиональных убийц и шпионов. Наташа решает раз и навсегда
+           разобраться с людьми, стараниями которых она сама стала Вдовой.</p>
+      </div>
+      </div>
+      <div class="carousel-item img-fluid">
+        <img [src]=imageSlide3 alt="Bond 25" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block">
+        <h5>Бонд 25</h5>
+        <p>Джеймс Бонд оставил оперативную службу и наслаждается спокойной жизнью на Ямайке. Все меняется, когда на острове
+           появляется его старый друг Феликс Лейтер из ЦРУ с просьбой о помощи. Миссия по спасению похищенного ученого оказывается
+           опаснее, чем предполагалось изначально. Бонд попадает в ловушку к таинственному злодею, вооруженному опасным
+           технологическим оружием.</p>
+      </div>
+      </div>
+      <div class="carousel-item img-fluid">
+        <img [src]=imageSlide4 alt="Artemis Faul" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block">
+        <h5>Артемис Фаул</h5>
+        <p>Укрытый от посторонних глаз, глубоко под поверхностью земной коры таится целый мир, населенный гномами, эльфами,
+          пикси, лепреконами, брауни и другими волшебными существами. Они спрятались от людей и создали свою собственную весьма
+           развитую цивилизацию. Их тайна так и оставалась бы нераскрытой, если бы не юный Артемис Фаул, прирожденный мошенник
+            и единственный наследник древнего рода криминальных гениев. Он сумел не только найти доказательства существования
+            подземного мира, но и придумал дерзкий план — ограбить его обитателей.</p>
+      </div>
+      </div>
+      <div class="carousel-item img-fluid">
+        <img [src]=imageSlide5 alt="Ford vs Ferrari" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block">
+        <h5>Ford против Ferrari</h5>
+        <p>Сюжет повествует о группе американских инженеров и дизайнеров. В 1960-х под руководством конструктора Кэрролла Шелби
+           и при поддержке британского гонщика Кена Майлса они должны были с нуля сделать абсолютно новый спорткар, способный
+           опередить Феррари — непобедимого чемпиона 24-часовой гонки на выносливость Ле-Ман.</p>
+      </div>
+      </div>
+    </div>
+    <!-- <a href="carouselExampleIndicators" class="carousel-control-prev" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a href="carouselExampleIndicators" class="carousel-control-next" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+      <span class="sr-only">Next</span>
+    </a> -->
+  </div>
+</div>
+
+<div class="body-control alert alert-dark">
+  <h1>Рекомендуем посмотреть</h1>
+
+  <div *ngFor="let mv of movies; let i = index" >
+    <img class="img{{mv.id}}" src={{mv.posterSrc}} *ngIf="i<5"  >
+    <a routerLink="/movie-details/{{mv.id}}" class="name{{i+1}}" *ngIf="i<5">{{mv.title}}</a>
+  </div>
+</div>
+
+<div class="aboutUs">
+  <h1 id="headingAbout">Онлайн-кинотеатр SlowKino: фильмы в хорошем качестве всегда приносят настоящее удовольствие</h1>
+  <p id="aboutText">Каждый день миллионы людей ищут фильмы онлайн, и никто не хочет усложнять себе жизнь – и вы наверняка один
+    <br> из них! А раз так, то SlowKino – это именно тот ресурс, который вам нужен. От лучших кинолент в HD-качестве вас
+    <br> отделяет буквально один клик. Мы не просто освобождаем от необходимости идти в кинотеатр или изучать
+    <br> программу телепередач – у посетителей нашего ресурса гораздо больше возможностей.</p>
+    <div class="accordion" id="accordionExample" style="width: 800px;">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          Подробнее
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        Видеотека SlowKino – это постоянно пополняющаяся коллекция в интернете, которая насчитывает более 10 разных
+        <br> жанров, доступного для просмотра онлайн.
+        <p>Онлайн-кинотеатр SlowKino.com – это:</p>
+         <ul>
+           <li>уникальная рекомендательная система, учитывающая ваши предпочтения и предлагающая посмотреть именно
+            то, что точно придется вам по душе;</li>
+           <li>просмотр онлайн контента хорошего разрешения без регистрации и смс.</li>
+           <li>уникальные условия и преимущества для обладателей подписки SlowKino, делающей кинопросмотр комфортным и приятным;</li>
+         </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="bottom-control alert alert-dark">
+  <h2>Детективы</h2>
+
+  <div class="box6">
+    <img class="img6" [src]=myImage6>
+    <a routerLink="/movie-details/6" class="name6">Достать ножи</a>
+  </div>
+  <div class="box7">
+    <img class="img7" [src]=myImage7>
+    <a routerLink="/movie-details/7" class="name7">Пассажир</a>
+  </div>
+  <div class="box8">
+    <img class="img8" [src]=myImage8>
+    <a routerLink="/movie-details/8" class="name8">Нерв</a>
+  </div>
+  <div class="box9">
+    <img class="img9" [src]=myImage9>
+    <a routerLink="/movie-details/9" class="name9">Шерлок Холмс: Игра теней</a>
+  </div>
+  <div class="box10">
+    <img class="img10" [src]=myImage10>
+    <a routerLink="/movie-details/10" class="name10">Иллюзия обмана</a>
+  </div>
+</div>
